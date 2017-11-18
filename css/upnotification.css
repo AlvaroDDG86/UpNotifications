@@ -1,0 +1,140 @@
+
+@keyframes bounceInLeft {
+    from, 60%, 75%, 90%, to {
+      animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+  
+    0% {
+      opacity: 0;
+      transform: translate3d(-3000px, 0, 0);
+    }
+  
+    60% {
+      opacity: 1;
+      transform: translate3d(25px, 0, 0);
+    }
+  
+    75% {
+      transform: translate3d(-10px, 0, 0);
+    }
+  
+    90% {
+      transform: translate3d(5px, 0, 0);
+    }
+  
+    to {
+      transform: none;
+    }
+  }
+
+@keyframes bounceInRight {
+    from, 60%, 75%, 90%, to {
+      animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+  
+    from {
+      opacity: 0;
+      transform: translate3d(3000px, 0, 0);
+    }
+  
+    60% {
+      opacity: 1;
+      transform: translate3d(-25px, 0, 0);
+    }
+  
+    75% {
+      transform: translate3d(10px, 0, 0);
+    }
+  
+    90% {
+      transform: translate3d(-5px, 0, 0);
+    }
+  
+    to {
+      transform: none;
+    }
+  }
+
+.up-notification{
+    width:200px;
+    min-height: 140px;
+    position: fixed;
+    text-align: center;
+    animation-duration: 1s; 
+    animation-fill-mode: both;
+    border-radius: 20px;
+    cursor: pointer;
+    color:white;
+    z-index: 10000;
+    background-color: rgba(0,0,0, 0.8);
+}
+.bounceInRight{
+    animation-name: bounceInRight;
+}
+
+.bounceInLeft{
+    animation-name: bounceInLeft;
+}
+
+.posTopRigth{
+    top: 10px;
+    right: 10px;
+}
+.posTopLeft{
+    top: 10px;
+    left: 10px;
+}
+.posBottomRigth{
+    bottom: 10px;
+    right: 10px;
+}
+.posBottomLeft{
+    bottom: 10px;
+    left: 10px;
+}
+.up-notification.h3{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.up-notification.p{
+    padding: 10px;
+    font-style: italic;
+}
+.fa {
+    padding: 10px !important;
+}
+.faColor-success{
+    color:#48C9B0;
+}
+.faColor-danger{
+    color:#EC7063;
+}
+.faColor-info{
+    color:#5DADE2;
+}
+.upTipo-success{
+    border: solid 4px #48C9B0;
+}
+.upTipo-danger{
+    border: solid 4px #EC7063;
+}
+.upTipo-info{
+    border: solid 4px #5DADE2;
+}
+
+
+
+
+
+
+
+/* .up-success{
+    background-color: rgba(100, 185, 77, 0.8);
+   
+}
+.up-danger{
+    background-color: rgba(190, 57, 57, 0.8);
+}
+.up-info{
+    background-color: rgba(39, 39, 199, 0.8);
+} */
