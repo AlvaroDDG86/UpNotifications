@@ -55,7 +55,39 @@
     }
   }
 
-.up-notification{
+@keyframes bounceOutDown {
+    20% {
+      transform: translate3d(0, 10px, 0);
+    }
+  
+    40%, 45% {
+      opacity: 1;
+      transform: translate3d(0, -20px, 0);
+    }
+  
+    to {
+      opacity: 0;
+      transform: translate3d(0, 2000px, 0);
+    }
+  }
+
+@keyframes bounceOutUp {
+    20% {
+      transform: translate3d(0, -10px, 0);
+    }
+  
+    40%, 45% {
+      opacity: 1;
+      transform: translate3d(0, 20px, 0);
+    }
+  
+    to {
+      opacity: 0;
+      transform: translate3d(0, -2000px, 0);
+    }
+  }
+
+  .up-notification{
     width:200px;
     min-height: 140px;
     position: fixed;
@@ -64,9 +96,7 @@
     animation-fill-mode: both;
     border-radius: 20px;
     cursor: pointer;
-    color:white;
     z-index: 10000;
-    background-color: rgba(0,0,0, 0.8);
 }
 .bounceInRight{
     animation-name: bounceInRight;
@@ -74,6 +104,14 @@
 
 .bounceInLeft{
     animation-name: bounceInLeft;
+}
+
+.bounceOutDown {
+    animation-name: bounceOutDown;
+}
+
+.bounceOutUp {
+    animation-name: bounceOutUp;
 }
 
 .posTopRigth{
@@ -98,43 +136,7 @@
 }
 .up-notification.p{
     padding: 10px;
-    font-style: italic;
 }
 .fa {
     padding: 10px !important;
 }
-.faColor-success{
-    color:#48C9B0;
-}
-.faColor-danger{
-    color:#EC7063;
-}
-.faColor-info{
-    color:#5DADE2;
-}
-.upTipo-success{
-    border: solid 4px #48C9B0;
-}
-.upTipo-danger{
-    border: solid 4px #EC7063;
-}
-.upTipo-info{
-    border: solid 4px #5DADE2;
-}
-
-
-
-
-
-
-
-/* .up-success{
-    background-color: rgba(100, 185, 77, 0.8);
-   
-}
-.up-danger{
-    background-color: rgba(190, 57, 57, 0.8);
-}
-.up-info{
-    background-color: rgba(39, 39, 199, 0.8);
-} */
