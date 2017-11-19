@@ -136,7 +136,6 @@ function UpNotification(params){
     }
 
     this.remove = function(){
-       debugger;
         switch(_position){
             case 1: 
             case 2:
