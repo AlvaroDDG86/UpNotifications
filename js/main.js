@@ -1,15 +1,11 @@
 
 var notification = new UpNotification({
-    time:3000
-});
-var notification2 = new UpNotification({
     time:3000,
-    posicion: 3
+    color: '#000000'
 });
 $(function(){
     $("#btnCrear").click(function(){
         notification.create();
-        notification2.create();
     });
     $("#btnDestruir").click(function(){
         notification.remove();
@@ -20,7 +16,6 @@ $(function(){
         notification.setIcono("fa-twitter");
         notification.setPosicion(2);
         notification.setColor('red');
-        notification.setBackground('blue');
         notification.setColorTexto('pink');
     });
 })

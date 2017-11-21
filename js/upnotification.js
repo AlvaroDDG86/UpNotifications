@@ -96,8 +96,16 @@ function UpNotification(params){
     //Poner el color del fondo
     let _background = '';
     this.setBackground = function(background){
-        _background = background || '#000000';
-        if(typeof $content !== 'undefined') $content.css('backgroundColor', _background);
+        debugger;
+        let red = 0;
+        let green = 0;
+        let blue = 0;
+        if (background){
+            red = parseInt(background.slice(1,3),16);
+            green = parseInt(background.slice(3,5),16);
+            blue = parseInt(background.slice(5,7),16);
+        }
+        if(typeof $content !== 'undefined') $content.css('background-color',  'rgba(' + red + ',' + green + ',' + blue + ',0.8)');
     }
     this.setBackground(params.background);
 
