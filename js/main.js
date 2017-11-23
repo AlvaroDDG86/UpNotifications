@@ -69,7 +69,7 @@ $(function(){
     })
     $("#btnCrearPersonalTitulo").click(function(){
         let notificacion = new UpNotification({
-            titulo: '¡Atención!'
+            titulo: 'Attention!'
         })
         notificacion.create();
     })
@@ -105,7 +105,6 @@ $(function(){
     })
     $("#btnCrearPersonalCallback").click(function(){
         let notificacion = new UpNotification({
-            time:3000,
             callback: function(){alert("Fire!");}
         })
         notificacion.create();

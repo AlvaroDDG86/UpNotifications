@@ -51,7 +51,7 @@ function UpNotification(params){
                 return (className.match (/(^|\s)fa-\S+/g) || []).join(' ');
             });
         }
-        _icono = "fa-2x "+ (icono || "fa-info");
+        _icono = "fa-2x "+ (icono || "fa-bell-o");
         if(typeof $icon !== 'undefined') $icon.addClass(_icono);
     }
     this.setIcono(params.icono);
@@ -62,7 +62,7 @@ function UpNotification(params){
     let $titulo = $("<h3></h3>");
     let _titulo = "";
     this.setTitulo = function(titulo){
-        _titulo = titulo || "Título";
+        _titulo = titulo || "Title";
         $titulo.text(_titulo);
         $titulo.append($icon);
     }
@@ -73,7 +73,7 @@ function UpNotification(params){
     let $mensaje = $("<p></p>");
     let _mensaje = "";
     this.setMensaje = function(mensaje){
-        _mensaje = mensaje || "texto de la notificación";
+        _mensaje = mensaje || "Some text for UpNotification";
         $mensaje.text(_mensaje);
     }
     this.setMensaje(params.mensaje);

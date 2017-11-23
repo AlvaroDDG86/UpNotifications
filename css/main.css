@@ -58,17 +58,29 @@ input[type="color"]::-webkit-color-swatch-wrapper {
 input[type="color"]::-webkit-color-swatch {
 	border: none;
 }
+footer{
+    margin-top: 1em;
+    padding: 2em;
+    min-height: 200px;
+    text-align: center;
+}
+.big{
+    font-size: 1.2em;
+}
+.link,
+.link:hover,
+.link:focus,
+.link:visited,
+.link:active
+{
+    color:white;
+    text-shadow: 2px 1px 0 #0b0ea0, 4px 3px 0 rgba(0,0,0,0.15);
+}
 @media (max-width: 600px) {
     body > div.jumbotron > div > h1 {
         font-size: 58px;
     }
   } 
-  /*
-@media (max-width: 767px){
-    body > div.jumbotron > div > h1 {
-    font-size: 58px;
-} */
-
 
 
 

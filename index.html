@@ -27,30 +27,32 @@
     <div class="jumbotron">
       <div class="container">
         <h1><i class="fa fa-bell-o" aria-hidden="true"></i> Up Notification</h1>
-        <h3>Libreria JQuery de notificaciones web</h3>
+        <h3>JQuery library for simple and easy web notifications</h3>
         <p><a class="btn btn-success btn-lg" href="#" role="button">Donwload &raquo;</a></p>
       </div>
     </div>
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
+        <h2>Requeriments</h2>
         <div class="col-md-12">
-          <h2>Requerimientos</h2>
-          <p>Es necesario tener <a class="btn btn-link" href="https://jquery.com/" target="_blank"><strong>JQUERY</strong></a> cargado, además de <a class="btn btn-link" href="http://fontawesome.io/" target="_blank"><strong>FONT-AWESOME</strong></a> para los iconos de la notificación.</p>
+          <p>You must set <a class="btn btn-link" href="https://jquery.com/" target="_blank"><strong>JQUERY</strong></a> and <a class="btn btn-link" href="http://fontawesome.io/" target="_blank"><strong>FONT-AWESOME</strong></a> in your project.</p>
         </div>
       </div>
       <hr/>
       <div class="row">
         <div class="col-md-12">
-          <h2>Fácil de usar</h2>
+            <h2>Get started</h2>
           <div class="row">
             <div class="col-md-6">
-                <p>Descargar la librería y añadir las referencias:</p>
-                <h4>CSS</h4>
-                <p class="code-gray"><span class="blue">&lt;link</span><span class="green"> rel=</span><span class="red">"stylesheet"</span> <span class="green"> href=</span><span class="red">"ruta/css/upnotification.css"</span><span class="blue">&gt;</span> </p>
-                <h4>Javascript</h4>
-                <p class="code-gray"><span class="blue">&lt;script</span> <span class="green"> href=</span><span class="red">"ruta/js/upnotification.js"</span>&gt;<span class="blue">&lt;/script&gt;</span></p>
-                <p>Crea una instancia de UpNotification y ejecuta su método create();</p>
+                <ol>
+                  <li>Copy the JS and CSS files into your directory project.</li>
+                  <li>In the &lt;head&gt; of your html, reference the location to your upnotification.css.</li>
+                  <p class="code-gray"><span class="blue">&lt;link</span><span class="green"> rel=</span><span class="red">"stylesheet"</span> <span class="green"> href=</span><span class="red">"ruta/css/upnotification.css"</span><span class="blue">&gt;</span> </p>
+                  <li>In the very bottom of your &lt;body&gt; html tag, reference the location to your upnotification.js.</li>
+                  <p class="code-gray"><span class="blue">&lt;script</span> <span class="green"> href=</span><span class="red">"ruta/js/upnotification.js"</span>&gt;<span class="blue">&lt;/script&gt;</span></p>  
+                  <li>Just create a new instance of UpNotification and call the create method.</li>
+                </ol>
             </div>
             <div class="col-md-6">
               <div class="code row">
@@ -72,10 +74,10 @@
       <hr/>
       <div class="row">
           <div class="col-md-12">
-            <h2>Personalización en la creación</h2>
+            <h2>Custom creation</h2>
             <div class="row">
               <div class="col-md-6">
-                <p>Crea una instancia de UpNotification, y con un objeto anónimo, configura la notificación como más se adapte a tu proyecto</p>
+                <p>Create a new instance of UpNotification with anonimous object for settings configurations. Customice the UpNotification as best for your project.</p>
               </div>
               <div class="col-md-6">
                 <div class="code row">
@@ -97,7 +99,7 @@
         <hr/>
         <div class="row">
             <div class="col-md-12">
-              <h2>Posibles opciones</h2>
+              <h2>Options</h2>
               <div id="divOpciones" data-children=".item">
                 <div class="item">
                   <a data-toggle="collapse" data-parent="#divOpciones" href="#posicion" aria-expanded="false" aria-controls="exampleAccordion1" class="btn btn-lg btn-link collapsed">
@@ -108,13 +110,13 @@
                     <div class="row">
                       <div class="col-md-6">
                           <ol class="list-group">
-                            <li class="list-group-item"><button class="btn btn-link" id="btnPosition1" type="button">1 . Derecha - Arriba</button> </li>
-                            <li class="list-group-item"><button class="btn btn-link" id="btnPosition2" type="button">2 . Izquierda - Arriba</button> </li>
-                            <li class="list-group-item"><button class="btn btn-link" id="btnPosition3" type="button">3 . Derecha - Abajo</button> </li>
-                            <li class="list-group-item"><button class="btn btn-link" id="btnPosition4" type="button">4 . Izquierda - Abajo</button> </li>
+                            <li class="list-group-item"><button class="btn btn-link" id="btnPosition1" type="button">1 . Left - Top</button> </li>
+                            <li class="list-group-item"><button class="btn btn-link" id="btnPosition2" type="button">2 . Right - Top</button> </li>
+                            <li class="list-group-item"><button class="btn btn-link" id="btnPosition3" type="button">3 . Left - Bottom</button> </li>
+                            <li class="list-group-item"><button class="btn btn-link" id="btnPosition4" type="button">4 . Right - Bottom</button> </li>
                           </ol>
                           <hr/>
-                          <p>Puedes cambiar la posición mendiante la función:</p>
+                          <p>You can set a new position by:</p>
                           <p class="code">notificacion.setPosicion(4);</p>
                       </div>
                       <div class="col-md-6">
@@ -141,10 +143,10 @@
                       <hr />
                     <div class="row">
                       <div class="col-md-6">
-                          <p>Solo necesitas especificar el nombre del icono de font-awesome que quieres mostrar en la notificación</p>
+                          <p>Set de icon only with the name of the font-awesome icon class like 'fa-star'</p>
                           <p><a href="http://fontawesome.io/icons/" class="btn btn-info" target='_blank'>ICONOS <i class="fa fa-font-awesome fa-2x" aria-hidden="true"></i></a></p>
                           <hr/>
-                          <p>Puedes cambiar el icono mendiante la función:</p>
+                          <p>You can set a new icon by:</p>
                           <p class="code">notificacion.setIcono('fa-camera');</p>
                       </div>
                       <div class="col-md-6">
@@ -171,16 +173,16 @@
                       <hr />
                       <div class="row">
                         <div class="col-md-6">
-                            <p>Cadena de texto que se mostrará en el título de la notificación</p>
+                            <p>Text for title of the UpNotification</p>
                             <hr/>
-                            <p>Puedes cambiar el título mendiante la función:</p>
-                            <p class="code">notificacion.setTitulo('Nuevo título');</p>
+                            <p>You can set a new title by:</p>
+                            <p class="code">notificacion.setTitulo('New title');</p>
                         </div>
                         <div class="col-md-6">
                           <div class="code row">
                             <div class="col-md-12">
                               <p>var notificacion = new UpNotification({</p>
-                              <p class="l1">titulo:'¡Atención!'</p>
+                              <p class="l1">titulo:'Attention!'</p>
                               <p>});</p>
                               <p>notificacion.create();</p>
                             </div>
@@ -200,10 +202,10 @@
                     <hr />
                     <div class="row">
                       <div class="col-md-6">
-                          <p>Cadena de texto que se mostrará en el mensaje de la notificación</p>
+                          <p>Text for the message of the UpNotification</p>
                           <hr/>
-                          <p>Puedes cambiar el mensaje mendiante la función:</p>
-                          <p class="code">notificacion.setMensaje('Nuevo mensaje');</p>
+                          <p>You can set a new message by:</p>
+                          <p class="code">notificacion.setMensaje('New message');</p>
                       </div>
                       <div class="col-md-6">
                         <div class="code row">
@@ -229,13 +231,13 @@
                     <hr />
                     <div class="row">
                       <div class="col-md-6">
-                          <p>Seleccionar el color del icono y del borde de la notificación</p>
+                          <p>Set the icon and border color with hexadecimal notation.</p>
                           <div>
                             <input type="color" name="color" id="inputColor" value="#39b2d6">
                             <i class="fa fa-hand-o-left fa-2x" aria-hidden="true"></i>
                           </div>
                           <hr/>
-                          <p>Puedes cambiar el color mendiante la función:</p>
+                          <p>You can change this color by:</p>
                           <p class="code">notificacion.setColor('#FF00FF');</p>
                       </div>
                       <div class="col-md-6">
@@ -262,13 +264,13 @@
                     <hr />
                     <div class="row">
                       <div class="col-md-6">
-                          <p>Seleccionar el color del background de la notificación</p>
+                          <p>Set the color for the background with hexadecimal notation.</p>
                           <div>
                             <input type="color" name="background" id="inputBackground">
                             <i class="fa fa-hand-o-left fa-2x" aria-hidden="true"></i>
                           </div>
                           <hr/>
-                          <p>Puedes cambiar el color del background mendiante la función:</p>
+                          <p>You can change the background color by:</p>
                           <p class="code">notificacion.setBackground('#FF00FF');</p>
                       </div>
                       <div class="col-md-6">
@@ -295,13 +297,13 @@
                     <hr />
                     <div class="row">
                       <div class="col-md-6">
-                          <p>Seleccionar el color del mensaje y el título de la notificación</p>
+                          <p>Set the color text of the UpNotification</p>
                           <div>
                             <input type="color" name="colorTexto" id="inputColorTexto" value="#ffffff">
                             <i class="fa fa-hand-o-left fa-2x" aria-hidden="true"></i>
                           </div>
                           <hr/>
-                          <p>Puedes cambiar el color del texto mendiante la función:</p>
+                          <p>You can change the color text by:</p>
                           <p class="code">notificacion.setColorTexto('#FF0000');</p>
                       </div>
                       <div class="col-md-6">
@@ -328,9 +330,9 @@
                     <hr />
                     <div class="row">
                       <div class="col-md-6">
-                          <p>Tiempo en milisegundos desde que se crea la notificación hasta que desaparece, por defecto el tiempo está deshabilitado.</p>
+                          <p>Time in miliseconds for hide the UpNotification, by default the UpNotification doesn't hide</p>
                           <hr/>
-                          <p>Puedes cambiar el tiempo mendiante la función:</p>
+                          <p>You can change this time by:</p>
                           <p class="code">notificacion.setTime(5000);</p>
                       </div>
                       <div class="col-md-6">
@@ -357,9 +359,9 @@
                     <hr />
                     <div class="row">
                       <div class="col-md-6">
-                          <p>Función que se ejecutará cuando desaparezca la notificación</p>
+                          <p>Callback to execute when the UpNotification hide</p>
                           <hr/>
-                          <p>Puedes cambiar la función mendiante:</p>
+                          <p>You can set a new callback by:</p>
                           <p class="code">notificacion.setCallback(function(){alert("Fire!");});</p>
                       </div>
                       <div class="col-md-6">
@@ -386,10 +388,13 @@
 
     </div> <!-- /container -->      
     <footer>
-        <h4>
-          Up Notification
-        </h4>
-      </footer>  
+        <p class="big">
+          <span class="link"><i class="fa fa-bell-o" aria-hidden="true"></i>UpNotification</span> v 1.0.0 Created by <a href="http://www.adgprogramador.com" class="link" target="_blank">Álvaro de Dios</a><br> <span id="year"></span><script> document.getElementById("year").innerHTML = new Date().getFullYear();</script>
+        </p>
+        <p class="big">
+          <a href="https://github.com/AlvaroDDG86/UpNotifications" target="_blank" class="link"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a> source
+        </p>
+    </footer>  
         <script src="js/vendor/jquery-1.11.2.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
 
