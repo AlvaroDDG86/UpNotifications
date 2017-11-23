@@ -1,6 +1,3 @@
-console.log("Cargada la libreria");
-let $body = $("body");
-
 /**
  * Crear un Up Notification
  * @param {*} params 
@@ -96,7 +93,6 @@ function UpNotification(params){
     //Poner el color del fondo
     let _background = '';
     this.setBackground = function(background){
-        debugger;
         let red = 0;
         let green = 0;
         let blue = 0;
@@ -135,7 +131,7 @@ function UpNotification(params){
         $content.removeClass(function (index, className) {
             return (className.match (/(^|\s)bounceOut\S+/g) || []).join(' ');
         });
-        $body.append($content);
+        $("body").append($content);
         if (typeof _time !== 'undefined'){
             setTimeout(function(){
                 this.remove();
