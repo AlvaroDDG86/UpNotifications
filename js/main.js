@@ -103,5 +103,12 @@ $(function(){
         })
         notificacion.create();
     })
+    $("#btnCrearPersonalCallback").click(function(){
+        let notificacion = new UpNotification({
+            time:3000,
+            callback: function(){alert("Fire!");}
+        })
+        notificacion.create();
+    })
     
 });

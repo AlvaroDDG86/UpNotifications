@@ -58,11 +58,12 @@ input[type="color"]::-webkit-color-swatch-wrapper {
 input[type="color"]::-webkit-color-swatch {
 	border: none;
 }
-/* @media (max-width: 600px) {
+@media (max-width: 600px) {
     body > div.jumbotron > div > h1 {
         font-size: 58px;
     }
-  }
+  } 
+  /*
 @media (max-width: 767px){
     body > div.jumbotron > div > h1 {
     font-size: 58px;

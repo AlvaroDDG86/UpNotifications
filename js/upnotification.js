@@ -118,16 +118,24 @@ function UpNotification(params){
     }
     this.setColorTexto(params.colorTexto);
 
-    //Destruir la notificación cuando recibe un click
-    $content.on("click", function(){
-        this.remove();
-    })
     //Tiempo que discurre hasta que desaparece la notificación
     let _time = undefined;
     this.setTime = function(time){
         _time = time;
     }
     this.setTime(params.time);
+
+    //Ejecutar la función callback
+    let _callback = undefined;
+    this.setCallback = function(callback){
+        _callback = callback;
+    }
+    this.setCallback(params.callback)
+
+    //Destruir la notificación cuando recibe un click
+    $content.on("click", function(){
+        this.remove();
+    }.bind(this));
 
     //crear la notificación con el tiempo para que desaparezca
     this.create = function(){
@@ -168,5 +176,6 @@ function UpNotification(params){
                 $content.addClass('bounceOutDown');
             break;
         }
+        {_callback && _callback();}
     }
 }
