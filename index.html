@@ -11,88 +11,364 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/upnotification.css">
-
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/upnotification.css">
     </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
-        <div class="header-container">
-            <header class="wrapper clearfix">
-                <h1 class="title">h1.title</h1>
-                <nav>
-                    <ul>
-                        <li><a href="#">nav ul li a</a></li>
-                        <li><a href="#">nav ul li a</a></li>
-                        <li><a href="#">nav ul li a</a></li>
-                    </ul>
-                </nav>
-            </header>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1><i class="fa fa-bell-o" aria-hidden="true"></i> Up Notification</h1>
+        <h3>Libreria JQuery de notificaciones web</h3>
+        <p><a class="btn btn-success btn-lg" href="#" role="button">Donwload &raquo;</a></p>
+      </div>
+    </div>
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Requerimientos</h2>
+          <p>Es necesario tener <a class="btn btn-link" href="https://jquery.com/" target="_blank"><strong>JQUERY</strong></a> cargado, además de <a class="btn btn-link" href="http://fontawesome.io/" target="_blank"><strong>FONT-AWESOME</strong></a> para los iconos de la notificación.</p>
         </div>
-
-        <div class="main-container">
-            <div class="main wrapper clearfix">
-                <button type="button" id="btnCrear">Crear</button>
-                <button type="button" id="btnDestruir">Destruir</button>
-                <button type="button" id="btnCambiar">Cambiar</button>
-                <article>
-                    <header>
-                        <h1>article header h1</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
-                    </header>
-                    <section>
-                        <h2>article section h2</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
-                    </section>
-                    <section>
-                        <h2>article section h2</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
-                    </section>
-                    <footer>
-                        <h3>article footer h3</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor.</p>
-                    </footer>
-                </article>
-
-                <aside>
-                    <h3>aside</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
-                </aside>
-
-            </div> <!-- #main -->
-        </div> <!-- #main-container -->
-
-        <div class="footer-container">
-            <footer class="wrapper">
-                <h3>footer</h3>
-            </footer>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Fácil de usar</h2>
+          <div class="row">
+            <div class="col-md-6">
+                <p>Descargar la librería y añadir las referencias:</p>
+                <h4>CSS</h4>
+                <p class="code-gray"><span class="blue">&lt;link</span><span class="green"> rel=</span><span class="red">"stylesheet"</span> <span class="green"> href=</span><span class="red">"ruta/css/upnotification.css"</span><span class="blue">&gt;</span> </p>
+                <h4>Javascript</h4>
+                <p class="code-gray"><span class="blue">&lt;script</span> <span class="green"> href=</span><span class="red">"ruta/js/upnotification.js"</span>&gt;<span class="blue">&lt;/script&gt;</span></p>
+                <p>Crea una instancia de UpNotification y ejecuta su método create();</p>
+            </div>
+            <div class="col-md-6">
+              <div class="code row">
+                <div class="col-md-12">
+                  <p>&lt;link rel="stylesheet" href="ruta/css/upnotification.css"&gt;</p>
+                  <p>&lt;script href="ruta/js/upnotification.js"&gt;&lt;/script&gt;</p>
+                  <p>var notificacion = new UpNotification({</p>
+                  <p>});</p>
+                  <p>notificacion.create();</p>
+                </div>
+                <div class="col-md-12">
+                  <button class="btn btn-info" href="#" id="btnCrearSimple">Mostrar &raquo;</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="row">
+          <div class="col-md-12">
+            <h2>Personalización en la creación</h2>
+            <div class="row">
+              <div class="col-md-6">
+                <p>Crea una instancia de UpNotification, y con un objeto anónimo, configura la notificación como más se adapte a tu proyecto</p>
+              </div>
+              <div class="col-md-6">
+                <div class="code row">
+                  <div class="col-md-12">
+                    <p>var notificacion = new UpNotification({</p>
+                      <p class="l1">titulo: 'Lorem',</p>
+                      <p class="l1">mensaje: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi necessitatibus libero ea quis? Earum minima qui nostrum ullam officiis facere!'</p>
+                    <p>});</p>
+                    <p>notificacion.create();</p>
+                  </div>
+                  <div class="col-md-12">
+                      <button class="btn btn-info" href="#" id="btnCrearPersonal1">Mostrar &raquo;</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+              <h2>Posibles opciones</h2>
+              <div id="divOpciones" data-children=".item">
+                <div class="item">
+                  <a data-toggle="collapse" data-parent="#divOpciones" href="#posicion" aria-expanded="false" aria-controls="exampleAccordion1" class="btn btn-lg btn-link collapsed">
+                    posicion
+                  </a>
+                  <div id="posicion" class="collapse" role="tabpanel">
+                    <hr />
+                    <div class="row">
+                      <div class="col-md-6">
+                          <ol class="list-group">
+                            <li class="list-group-item"><button class="btn btn-link" id="btnPosition1" type="button">1 . Derecha - Arriba</button> </li>
+                            <li class="list-group-item"><button class="btn btn-link" id="btnPosition2" type="button">2 . Izquierda - Arriba</button> </li>
+                            <li class="list-group-item"><button class="btn btn-link" id="btnPosition3" type="button">3 . Derecha - Abajo</button> </li>
+                            <li class="list-group-item"><button class="btn btn-link" id="btnPosition4" type="button">4 . Izquierda - Abajo</button> </li>
+                          </ol>
+                          <hr/>
+                          <p>Puedes cambiar la posición mendiante la función:</p>
+                          <p class="code">notificacion.setPosicion(4);</p>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="code row">
+                          <div class="col-md-12">
+                            <p>var notificacion = new UpNotification({</p>
+                            <p class="l1">posicion:2</p>
+                            <p>});</p>
+                            <p>notificacion.create();</p>
+                          </div>
+                          <div class="col-md-12">
+                            <button class="btn btn-info" href="#" id="btnCrearPersonalPosicion">Mostrar &raquo;</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <a data-toggle="collapse" data-parent="#divOpciones" href="#icono" aria-expanded="true" aria-controls="exampleAccordion2" class="btn btn-lg btn-link">
+                      icono
+                  </a>
+                  <div id="icono" class="collapse" role="tabpanel">
+                      <hr />
+                    <div class="row">
+                      <div class="col-md-6">
+                          <p>Solo necesitas especificar el nombre del icono de font-awesome que quieres mostrar en la notificación</p>
+                          <p><a href="http://fontawesome.io/icons/" class="btn btn-info" target='_blank'>ICONOS <i class="fa fa-font-awesome fa-2x" aria-hidden="true"></i></a></p>
+                          <hr/>
+                          <p>Puedes cambiar el icono mendiante la función:</p>
+                          <p class="code">notificacion.setIcono('fa-camera');</p>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="code row">
+                          <div class="col-md-12">
+                            <p>var notificacion = new UpNotification({</p>
+                            <p class="l1">icono:'fa-star'</p>
+                            <p>});</p>
+                            <p>notificacion.create();</p>
+                          </div>
+                          <div class="col-md-12">
+                            <button class="btn btn-info" href="#" id="btnCrearPersonalIcono">Mostrar &raquo;</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <a data-toggle="collapse" data-parent="#divOpciones" href="#titulo" aria-expanded="true" aria-controls="exampleAccordion2" class="btn btn-lg btn-link">
+                      titulo
+                  </a>
+                  <div id="titulo" class="collapse" role="tabpanel">
+                      <hr />
+                      <div class="row">
+                        <div class="col-md-6">
+                            <p>Cadena de texto que se mostrará en el título de la notificación</p>
+                            <hr/>
+                            <p>Puedes cambiar el título mendiante la función:</p>
+                            <p class="code">notificacion.setTitulo('Nuevo título');</p>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="code row">
+                            <div class="col-md-12">
+                              <p>var notificacion = new UpNotification({</p>
+                              <p class="l1">titulo:'¡Atención!'</p>
+                              <p>});</p>
+                              <p>notificacion.create();</p>
+                            </div>
+                            <div class="col-md-12">
+                              <button class="btn btn-info" href="#" id="btnCrearPersonalTitulo">Mostrar &raquo;</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <a data-toggle="collapse" data-parent="#divOpciones" href="#mensaje" aria-expanded="true" aria-controls="exampleAccordion2" class="btn btn-lg btn-link">
+                      mensaje
+                  </a>
+                  <div id="mensaje" class="collapse" role="tabpanel">
+                    <hr />
+                    <div class="row">
+                      <div class="col-md-6">
+                          <p>Cadena de texto que se mostrará en el mensaje de la notificación</p>
+                          <hr/>
+                          <p>Puedes cambiar el mensaje mendiante la función:</p>
+                          <p class="code">notificacion.setMensaje('Nuevo mensaje');</p>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="code row">
+                          <div class="col-md-12">
+                            <p>var notificacion = new UpNotification({</p>
+                            <p class="l1">mensaje: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis placeat cumque perferendis! Ipsam facere corporis quasi ab unde incidunt reprehenderit?'</p>
+                            <p>});</p>
+                            <p>notificacion.create();</p>
+                          </div>
+                          <div class="col-md-12">
+                            <button class="btn btn-info" href="#" id="btnCrearPersonalMensaje">Mostrar &raquo;</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <a data-toggle="collapse" data-parent="#divOpciones" href="#color" aria-expanded="true" aria-controls="exampleAccordion2" class="btn btn-lg btn-link">
+                      color
+                  </a>
+                  <div id="color" class="collapse" role="tabpanel">
+                    <hr />
+                    <div class="row">
+                      <div class="col-md-6">
+                          <p>Seleccionar el color del icono y del borde de la notificación</p>
+                          <div>
+                            <input type="color" name="color" id="inputColor" value="#39b2d6">
+                            <i class="fa fa-hand-o-left fa-2x" aria-hidden="true"></i>
+                          </div>
+                          <hr/>
+                          <p>Puedes cambiar el color mendiante la función:</p>
+                          <p class="code">notificacion.setColor('#FF00FF');</p>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="code row">
+                          <div class="col-md-12">
+                            <p>var notificacion = new UpNotification({</p>
+                            <p class="l1">color: '<span id="valorColor"></span>'</p>
+                            <p>});</p>
+                            <p>notificacion.create();</p>
+                          </div>
+                          <div class="col-md-12">
+                            <button class="btn btn-info" href="#" id="btnCrearPersonalColor">Mostrar &raquo;</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <a data-toggle="collapse" data-parent="#divOpciones" href="#background" aria-expanded="true" aria-controls="exampleAccordion2" class="btn btn-lg btn-link">
+                      background
+                  </a>
+                  <div id="background" class="collapse" role="tabpanel">
+                    <hr />
+                    <div class="row">
+                      <div class="col-md-6">
+                          <p>Seleccionar el color del background de la notificación</p>
+                          <div>
+                            <input type="color" name="background" id="inputBackground">
+                            <i class="fa fa-hand-o-left fa-2x" aria-hidden="true"></i>
+                          </div>
+                          <hr/>
+                          <p>Puedes cambiar el color del background mendiante la función:</p>
+                          <p class="code">notificacion.setBackground('#FF00FF');</p>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="code row">
+                          <div class="col-md-12">
+                            <p>var notificacion = new UpNotification({</p>
+                            <p class="l1">background: '<span id="valorBackground"></span>'</p>
+                            <p>});</p>
+                            <p>notificacion.create();</p>
+                          </div>
+                          <div class="col-md-12">
+                            <button class="btn btn-info" href="#" id="btnCrearPersonalBackground">Mostrar &raquo;</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <a data-toggle="collapse" data-parent="#divOpciones" href="#colorTexto" aria-expanded="true" aria-controls="exampleAccordion2" class="btn btn-lg btn-link">
+                      colorTexto
+                  </a>
+                  <div id="colorTexto" class="collapse" role="tabpanel">
+                    <hr />
+                    <div class="row">
+                      <div class="col-md-6">
+                          <p>Seleccionar el color del mensaje y el título de la notificación</p>
+                          <div>
+                            <input type="color" name="colorTexto" id="inputColorTexto" value="#ffffff">
+                            <i class="fa fa-hand-o-left fa-2x" aria-hidden="true"></i>
+                          </div>
+                          <hr/>
+                          <p>Puedes cambiar el color del texto mendiante la función:</p>
+                          <p class="code">notificacion.setColorTexto('#FF0000');</p>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="code row">
+                          <div class="col-md-12">
+                            <p>var notificacion = new UpNotification({</p>
+                            <p class="l1">colorTexto: '<span id="valorColorTexto"></span>'</p>
+                            <p>});</p>
+                            <p>notificacion.create();</p>
+                          </div>
+                          <div class="col-md-12">
+                            <button class="btn btn-info" href="#" id="btnCrearPersonalColorTexto">Mostrar &raquo;</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <a data-toggle="collapse" data-parent="#divOpciones" href="#time" aria-expanded="true" aria-controls="exampleAccordion2" class="btn btn-lg btn-link ">
+                      time
+                  </a>
+                  <div id="time" class="collapse" role="tabpanel">
+                    <hr />
+                    <div class="row">
+                      <div class="col-md-6">
+                          <p>Tiempo en milisegundos desde que se crea la notificación hasta que desaparece, por defecto el tiempo está deshabilitado.</p>
+                          <hr/>
+                          <p>Puedes cambiar el tiempo mendiante la función:</p>
+                          <p class="code">notificacion.setTime(5000);</p>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="code row">
+                          <div class="col-md-12">
+                            <p>var notificacion = new UpNotification({</p>
+                            <p class="l1">time: 3000</p>
+                            <p>});</p>
+                            <p>notificacion.create();</p>
+                          </div>
+                          <div class="col-md-12">
+                            <button class="btn btn-info" href="#" id="btnCrearPersonalTime">Mostrar &raquo;</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-        <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script> -->
-
-        
+    </div> <!-- /container -->      
+    <footer>
+        <h4>
+          Up Notification
+        </h4>
+      </footer>  
         <script src="js/vendor/jquery-1.11.2.min.js"></script>
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-        <script src="js/plugins.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+
         <script src="js/upnotification.js"></script>
         <script src="js/main.js"></script>
-        <script src="js/prueba.js"></script>
-
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            // (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            // function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            // e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            // e.src='//www.google-analytics.com/analytics.js';
-            // r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            // ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
+        <!-- <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script> -->
     </body>
 </html>

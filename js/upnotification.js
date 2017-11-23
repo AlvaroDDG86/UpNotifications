@@ -1,3 +1,6 @@
+console.log("Cargada la libreria");
+let $body = $("body");
+
 /**
  * Crear un Up Notification
  * @param {*} params 
@@ -53,6 +56,7 @@ function UpNotification(params){
     }
     this.setIcono(params.icono);
     var $icon = $("<i></i>").addClass("fa " + _icono);
+    $icon.css("padding","10px");
 
     //Título de la notificación
     let $titulo = $("<h3></h3>");
@@ -84,12 +88,12 @@ function UpNotification(params){
     //Poner el color al icono y al borde
     let _color = '';
     this.setColor = function(color){
-        _color = color || 'blue';
+        _color = color || '#39b2d6';
         if(typeof $icon !== 'undefined') $icon.css('color', _color);
         if(typeof $content !== 'undefined') $content.css('border', 'solid 4px ' + _color);
     }
     this.setColor(params.color);
-
+    
     //Poner el color del fondo
     let _background = '';
     this.setBackground = function(background){
@@ -118,7 +122,6 @@ function UpNotification(params){
     $content.on("click", function(){
         this.remove();
     })
-    
     //Tiempo que discurre hasta que desaparece la notificación
     let _time = undefined;
     this.setTime = function(time){
@@ -132,6 +135,21 @@ function UpNotification(params){
             return (className.match (/(^|\s)bounceOut\S+/g) || []).join(' ');
         });
         $("body").append($content);
+        let classPosition = $content[0].className.split(' ')[1];
+        switch(classPosition){
+            case "posTopRigth":
+                $content.css("right", parseInt($content.css("right")) + ($("body").find(".posTopRigth").length*20) + "px");
+            break;
+            case "posTopLeft":
+                $content.css("left", parseInt($content.css("left")) + ($("body").find(".posTopLeft").length*20) + "px");
+            break;
+            case "posBottomRigth":
+                $content.css("right", parseInt($content.css("right")) + ($("body").find(".posBottomRigth").length*20) + "px");
+            break;
+            case "posBottomLeft":
+                $content.css("left", parseInt($content.css("left")) + ($("body").find(".posBottomLeft").length*20) + "px");
+            break;
+        }
         if (typeof _time !== 'undefined'){
             setTimeout(function(){
                 this.remove();
