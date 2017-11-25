@@ -1,0 +1,100 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+    //$main-color:#d63ace;
+    $main-color:#3ab1d6;
+    $blue:#0b0ea0;
+
+    
+   body > div.jumbotron > div > h1 {
+    margin-top: 25px;
+    font-size: 90px;
+    text-shadow: 4px 3px 0 $blue, 9px 8px 0 rgba(0, 0, 0, 0.15);
+  }
+  
+  .jumbotron, footer {
+    background-color: $main-color;
+    color: white;
+  }
+  
+  .code {
+    background-color: black;
+    color: white;
+    padding: 1em;
+    font-family: 'Source Code Pro', monospace;
+  }
+  
+  .code-gray {
+    background-color: rgb(208, 230, 250);
+    padding: 1em;
+    font-family: 'Source Code Pro', monospace;
+  }
+  
+  .blue {
+    color: blue;
+  }
+  
+  .red {
+    color: red;
+  }
+  
+  .green {
+    color: green;
+  }
+  
+  .l1 {
+    margin-left: 1em;
+  }
+  
+  .l2 {
+    margin-left: 2em;
+  }
+  
+  .l3 {
+    margin-left: 3em;
+  }
+  
+  .l4 {
+    margin-left: 4em;
+  }
+  .l5{
+    margin-left: 5em;
+  }
+  input[type="color"] {
+    -webkit-appearance: none;
+    border: none;
+    width: 32px;
+    height: 32px;
+    &::-webkit-color-swatch-wrapper {
+      padding: 0;
+    }
+    &::-webkit-color-swatch {
+      border: none;
+    }
+  }
+  
+  footer {
+    margin-top: 1em;
+    padding: 2em;
+    min-height: 200px;
+    text-align: center;
+  }
+  
+  .big {
+    font-size: 1.2em;
+  }
+  
+  .link {
+    color: white;
+    text-shadow: 2px 1px 0 $blue, 4px 3px 0 rgba(0, 0, 0, 0.15);
+    &:hover, &:focus, &:visited, &:active {
+      color: white;
+      text-shadow: 2px 1px 0 $blue, 4px 3px 0 rgba(0, 0, 0, 0.15);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    body > div.jumbotron > div > h1 {
+      font-size: 58px;
+    }
+  }
