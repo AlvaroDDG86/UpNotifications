@@ -1,0 +1,24 @@
+{
+  "name": "upnotifications",
+  "version": "1.0.0",
+  "description": "library for easy web notifications",
+  "main": "index.html",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlvaroDDG86/UpNotifications.git"
+  },
+  "author": "@AlvaroDDG86",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/AlvaroDDG86/UpNotifications/issues"
+  },
+  "homepage": "https://github.com/AlvaroDDG86/UpNotifications#readme"
+}
